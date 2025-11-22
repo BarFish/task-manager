@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block head %}
+{% endblock %}
+{% block body %}
+<div class="content">
+ <h1>Update My Todo</h1>
+ <div class="form">
+   <form action="{{ url_for('update_task', tid=task.id) }}" method="POST">
+    <table>
+        <tr>
+            <td>content:</td>
+            <td> <input type="text" name="content" id="content" value="{{ task.content }}"> </td>
+        </tr>
+    </table>
+    <input type="submit" value="Update task">
+   </form>
+  </div>
+</div>
+{% endblock %}

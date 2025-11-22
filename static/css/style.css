@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #1f2937;
+    min-height: 100vh;
+}
+
+.content {
+    margin: 40px auto;
+    width: 90%;
+    max-width: 600px;
+    background-color: #f9fafb;
+    padding: 30px 35px;
+    border-radius: 16px;
+    border: 1px solid #e5e7eb;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #2563eb;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #e5e7eb;
+    padding: 14px 10px;
+    text-align: center;
+    word-wrap: break-word;
+    color: #1f2937;
+}
+
+th {
+    background-color: #f3f4f6;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+tr:nth-child(odd) td {
+    background-color: #ffffff;
+}
+
+tr:nth-child(even) td {
+    background-color: #f9fafb;
+}
+
+a.button {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 2px;
+    background-color: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+a.button.delete {
+    background-color: #ef4444;
+}
+
+a.button:hover {
+    background-color: #1d4ed8;
+}
+
+a.button.delete:hover {
+    background-color: #dc2626;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: #ffffff;
+    color: #1f2937;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 15px;
+}
+
+input[type="submit"]:hover {
+    background-color: #1d4ed8;
+}
+
+@media (max-width: 450px) {
+    input[type="text"], input[type="submit"] {
+        flex: 1 1 100%;
+    }
+}
